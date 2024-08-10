@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jogo da Velha / Tic-Tac-Toe</title>
+
+        <!-- Estilos -->
+         <link rel="stylesheet" href="style.css">
+
+         <!-- Funcionalidade -->
+          <script src="main.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Jogo da Velha - Tic-Tac-Toe</h1>
+        </header>
+
+        <main>
+            <section id="botoes">
+                <h2>Selecione o que deseja fazer</h2>
+                <input type="button" value="Selecionar jogadores" id="adicionar-jogadores">
+                <input type="button" value="Reiniciar o jogo" id="reiniciar">
+            </section>
+            <div class="jogo">
+                <section class="tela-jogo jogadores-selecao">
+                    <h3>Jogador Nº 1</h3>
+                    <span class="azul" id="jogador1"></span>
+                </section>
+                <section class="tela-jogo">
+                    <div id="tabuleiro">
+                        <div class="quadrados">
+                            <span class="quadrado-marcacao"></span>
+                        </div>
+                        <div class="quadrados">
+                            <span class="quadrado-marcacao"></span>
+                        </div>
+                        <div class="quadrados">
+                            <span class="quadrado-marcacao"></span>
+                        </div>
+                        <div class="quadrados">
+                            <span class="quadrado-marcacao"></span>
+                        </div>
+                        <div class="quadrados">
+                            <span class="quadrado-marcacao"></span>
+                        </div>
+                        <div class="quadrados">
+                            <span class="quadrado-marcacao"></span>
+                        </div>
+                        <div class="quadrados">
+                            <span class="quadrado-marcacao"></span>
+                        </div>
+                        <div class="quadrados">
+                            <span class="quadrado-marcacao"></span>
+                        </div>
+                        <div class="quadrados">
+                            <span class="quadrado-marcacao"></span>
+                        </div>
+                    </div>
+                </section>
+                <section class="tela-jogo jogadores-selecao">
+                    <h3>Jogador Nº 2</h3>
+                    <span class="verde" id="jogador2"></span>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <h4>Desenvolvido por Márcio Roberto - Exercício do curso One Bit Code</h4>
+        </footer>
+    </body>
+</html>

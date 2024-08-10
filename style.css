@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+
+/* Cabeçaalho */
+
+header {
+    text-align: center;
+    margin: 1.5em 0;
+}
+
+/* Botões de inicio do jogo */
+
+#botoes {
+    text-align: center;
+    margin: 2em 0;
+}
+
+#botoes input {
+    width: 12em;
+    padding: .8em 1em;
+    font-size: .9em;
+    margin: 1em 0.5em;
+}
+
+.jogador-selecionado {
+    border: 2px solid orangered;
+    padding: 1em;
+}
+
+/* Layout */
+
+.jogo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    margin: 3em 0;
+}
+
+.jogo span {
+    font-size: 2em;
+}
+
+/* Tabuleiro */
+
+#tabuleiro {
+    /* border: 2px solid black; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 calc((100% - 18em)/2);
+}
+
+.quadrados {
+    width: 6em;
+    height: 6em;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quadrado-marcacao {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 3rem !important;
+    line-height: 2em;
+}
+
+.azul {
+    color: blue;
+}
+
+.verde {
+    color: green;
+}
+
+/* Rodapé */
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+}

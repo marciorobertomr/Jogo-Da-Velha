@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* border: 1px solid red; */
+    font-family: "Open Sans", sans-serif;
 }
 
 /* Cabeçaalho */
@@ -10,6 +12,11 @@
 header {
     text-align: center;
     margin: 1.5em 0;
+}
+
+body {
+    background-color: #3A3335;
+    color: white;
 }
 
 /* Botões de inicio do jogo */
@@ -20,15 +27,29 @@ header {
 }
 
 #botoes input {
-    width: 12em;
-    padding: .8em 1em;
+    width: 15em;
+    padding: 1em;
     font-size: .9em;
     margin: 1em 0.5em;
+    background-color: #36c8ed;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 30px;
+}
+
+#botoes input:hover {
+    scale: 1.1;
 }
 
 .jogador-selecionado {
-    border: 2px solid orangered;
-    padding: 1em;
+    border: 2px solid #EE6C4D;
+    border-radius: 20px;
+    padding: 1.5em;
+}
+
+.botao-desabilitado {
+    pointer-events: none;;
+    opacity: 0.6;
 }
 
 /* Layout */
@@ -49,7 +70,6 @@ header {
 /* Tabuleiro */
 
 #tabuleiro {
-    /* border: 2px solid black; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0 calc((100% - 18em)/2);
@@ -58,7 +78,7 @@ header {
 .quadrados {
     width: 6em;
     height: 6em;
-    border: 1px solid black;
+    border: 1px solid #B99170;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,11 +93,19 @@ header {
 }
 
 .azul {
-    color: blue;
+    color: #63ADF2;
 }
 
 .verde {
-    color: green;
+    color: #83B692;
+}
+
+.vitoria {
+    background-color: rgb(127, 255, 0);
+}
+
+.tabuleiro-desabilitado {
+    pointer-events: none;
 }
 
 /* Rodapé */

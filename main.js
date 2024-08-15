@@ -114,6 +114,7 @@ reiniciar.addEventListener('click', () => {
         })
 
         contador = 0;
+        empate = 0;
 
         jogadas = {
             jogador1: [],
@@ -140,11 +141,13 @@ let jogadas = {
     jogador2: []
 };
 
+let empate = 0;
+
 function validaVitoria(jogador) {
     jogador.sort();
 
-    let posicoesCombinacoes = [];
     let vitoria = false;
+    empate++;
     
     for (let i = 0; i < combinacoesDeVitoria.length; i++) {
         let validador = 0;
@@ -162,8 +165,12 @@ function validaVitoria(jogador) {
         })
     }
 
+
     if (vitoria) {
         return vitoria;
+    } else if (empate === 9) {
+        alert('Empate! Reinicie o jogo para tentar novamente.');
+        return;
     }
 }
 
